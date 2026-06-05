@@ -33,19 +33,21 @@ import numpy as np
 # cv2.destroyAllWindows() 
 
 # 직선 만들기
-sketchbookImg = np.zeros((480, 640, 3), dtype=np.uint8)
-sketchbookImg[:] = (0, 0, 0)        # B   G   R  -> 0 ~ 255
+# sketchbookImg = np.zeros((480, 640, 3), dtype=np.uint8)
+# sketchbookImg[:] = (0, 0, 0)        # B   G   R  -> 0 ~ 255
 
-COLOR_4 = (0, 255, 0)   # RED
-COLOR_8 = (0, 0, 255)   # GREEN
-COLOR_AA = (255, 0, 0)  # BLUE
-THINKNESS = 3           # 두께
+# 튜플
+# COLOR_4 = (0, 0, 255)   # RED 
+# COLOR_8 = (0, 255, 0)   # GREEN
+# COLOR_AA = (255, 0, 0)  # BLUE
+# THINKNESS = 3           # 두께
 
-cv2.line(sketchbookImg, (10, 10), (400, 400), COLOR_4, THINKNESS, cv2.LINE_4)
-        # 만들 위치        시작점       끝점       색상      두께        라인타입
-cv2.line(sketchbookImg, (10, 10), (500, 400), COLOR_8, THINKNESS, cv2.LINE_8)
-cv2.line(sketchbookImg, (10, 10), (600, 400), COLOR_AA, THINKNESS, cv2.LINE_AA)
+# cv2.line(sketchbookImg, (10, 10), (400, 400), COLOR_4, THINKNESS, cv2.LINE_4)
+#         # 만들 위치        시작점       끝점       색상      두께        라인타입
+# cv2.line(sketchbookImg, (10, 10), (500, 400), COLOR_8, THINKNESS, cv2.LINE_8)
+# cv2.line(sketchbookImg, (10, 10), (600, 400), COLOR_AA, THINKNESS, cv2.LINE_AA)
+                                                                   # AA: 안티에일리싱
 
-cv2.imshow('title-sketchbookImg', sketchbookImg)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# cv2.imshow('title-sketchbookImg', sketchbookImg)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
